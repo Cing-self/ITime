@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear_tag"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <cn.lankton.flowlayout.FlowLayout
+        android:id="@+id/flowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:lineSpacing="10dp"
+        android:background="#F0F0F0">
+
+    </cn.lankton.flowlayout.FlowLayout>
+
+</LinearLayout>

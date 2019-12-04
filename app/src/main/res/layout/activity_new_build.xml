@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:leon="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.example.caijinhong.itime.NewBuildActivity">
+
+    <LinearLayout
+        android:id="@+id/L_new_bulld"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="标题" />
+
+        <EditText
+            android:id="@+id/edit_title"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="left"
+            android:inputType="textPersonName"
+            android:hint="生日，纪念日，节日，考试..."
+            android:textColor="#0000"/>
+
+        <TextView
+            android:id="@+id/text_view_remarks"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="备注" />
+
+        <EditText
+            android:id="@+id/edit_remarks"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="left"
+            android:inputType="textPersonName"
+            android:hint="想说的话，目标，格言...." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/button_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:leftIcon="@drawable/person_information"
+            leon:leftText="日期">
+
+            <TextView
+                android:id="@+id/text_view_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="110dp"
+                android:layout_marginStart="110dp"
+                android:text=" " />
+        </com.leon.lib.settingview.LSettingItem>
+
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/button_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:leftIcon="@drawable/person_myorder"
+            leon:leftText="重复设置">
+
+            <TextView
+                android:id="@+id/text_view_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="150dp"
+                android:layout_marginStart="150dp"
+
+                android:text=" " />
+        </com.leon.lib.settingview.LSettingItem>
+
+
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/button_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            leon:leftIcon="@drawable/person_authentication_data"
+            leon:leftText="图片">
+
+            <TextView
+                android:id="@+id/text_view_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="110dp"
+                android:layout_marginStart="110dp"
+                android:text=" " />
+        </com.leon.lib.settingview.LSettingItem>
+
+
+        <com.leon.lib.settingview.LSettingItem
+            android:id="@+id/button_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/MyCheckBox"
+            leon:leftIcon="@drawable/person_nottravel"
+            leon:leftText="添加标签">
+
+            <TextView
+                android:id="@+id/text_view_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="110dp"
+                android:layout_marginStart="110dp"
+                android:text=" " />
+        </com.leon.lib.settingview.LSettingItem>
+
+
+    </LinearLayout>
+</LinearLayout>
