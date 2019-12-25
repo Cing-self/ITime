@@ -1,41 +1,53 @@
 package com.example.caijinhong.itime.data;
 
+import android.graphics.Bitmap;
+
 /**
  * Created by cai jin hong on 2019/11/12.
  */
 
 public class TimeItem {
-    private String name;
-    private double price;
-    private int pictureId;
+    private String title;
+    private String remark;
+    private Bitmap image;
+    private String time;
 
-    public TimeItem(String name, double price, int pictureId) {
-        this.name = name;
-        this.price = price;
-        this.pictureId = pictureId;
+    public String getTitle() {
+        return title;
     }
 
-    public String getName() {
-        return name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getRemark() {
+        return remark;
     }
 
-    public double getPrice() {
-        return price;
+    public void setRemark(String remark) {
+        this.remark = remark;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public Bitmap getImage() {
+        return image;
     }
 
-    public int getPictureId() {
-        return pictureId;
+    public void setImage(Bitmap image) {
+        this.image = image;
     }
 
-    public void setPictureId(int pictureId) {
-        this.pictureId = pictureId;
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+
+    public TimeItem(String title, String remark, Bitmap image, String time) {
+        this.title = title;
+        this.remark = remark;
+        this.image = image;
+        this.time = time;
     }
 }

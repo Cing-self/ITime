@@ -1,12 +1,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:leon="http://schemas.android.com/apk/res-auto"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical"
-    tools:context="com.example.caijinhong.itime.NewBuildActivity">
+              xmlns:leon="http://schemas.android.com/apk/res-auto"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              tools:context="com.example.caijinhong.itime.NewBuildActivity"
+              android:orientation="vertical"
+    >
 
     <LinearLayout
         android:id="@+id/L_new_bulld"
@@ -22,7 +23,7 @@
             android:id="@+id/text_view_title"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="标题" />
+            android:text="标题"/>
 
         <EditText
             android:id="@+id/edit_title"
@@ -30,15 +31,14 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="left"
-            android:inputType="textPersonName"
             android:hint="生日，纪念日，节日，考试..."
-            android:textColor="#0000"/>
+            android:inputType="textPersonName"/>
 
         <TextView
             android:id="@+id/text_view_remarks"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="备注" />
+            android:text="备注"/>
 
         <EditText
             android:id="@+id/edit_remarks"
@@ -46,8 +46,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="left"
-            android:inputType="textPersonName"
-            android:hint="想说的话，目标，格言...." />
+            android:hint="想说的话，目标，格言...."
+            android:inputType="textPersonName"/>
 
     </LinearLayout>
 
@@ -103,16 +103,6 @@
             leon:leftIcon="@drawable/person_authentication_data"
             leon:leftText="图片">
 
-            <TextView
-                android:id="@+id/text_view_image"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="110dp"
-                android:layout_marginStart="110dp"
-                android:text=" " />
         </com.leon.lib.settingview.LSettingItem>
 
 
@@ -131,11 +121,21 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="110dp"
-                android:layout_marginStart="110dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginStart="140dp"
+
                 android:text=" " />
         </com.leon.lib.settingview.LSettingItem>
 
+        <ImageButton
+            android:id="@+id/button_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@mipmap/ic_check"/>
+
 
     </LinearLayout>
+
 </LinearLayout>
